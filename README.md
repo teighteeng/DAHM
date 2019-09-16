@@ -1,2 +1,2 @@
 # DAHM
-> จัดตารางการนัดหมอได้ง่ายขึ้น
+> Part of 802208 User Interface Design, Silpakorn University
