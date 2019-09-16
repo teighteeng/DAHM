@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'cs_chatthairegular';
+    src: url('cschatthai-webfont.eot');
+    src: url('cschatthai-webfont.eot?#iefix') format('embedded-opentype'),
+         url('cschatthai-webfont.woff2') format('woff2'),
+         url('cschatthai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CSChatThai';
+    src: url('CSChatThai.ttf');
+}

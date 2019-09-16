@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -5px;
+}
+
+.sprite-check {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -5px;
+}
+
+.sprite-chevron-down {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -5px;
+}
+
+.sprite-chevron-left {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -5px;
+}
+
+.sprite-chevron-left-green {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -65px;
+}
+
+.sprite-chevron-right {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -65px;
+}
+
+.sprite-cross {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -65px;
+}
+
+.sprite-cross-black {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -65px;
+}
+
+.sprite-dots-three-horizontal {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -125px;
+}
+
+.sprite-eye {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -125px;
+}
+
+.sprite-list {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -125px;
+}
+
+.sprite-logo-green {
+    width: 155px;
+    height: 50px;
+    background-position: -5px -185px;
+}
+
+.sprite-magnifying-glass {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -125px;
+}
+
+.sprite-magnifying-glass-white {
+    width: 50px;
+    height: 50px;
+    background-position: -170px -185px;
+}
+
+.sprite-menu {
+    width: 50px;
+    height: 50px;
+    background-position: -245px -5px;
+}
+
+.sprite-menu-black {
+    width: 50px;
+    height: 50px;
+    background-position: -245px -65px;
+}
+
+.sprite-phone {
+    width: 50px;
+    height: 50px;
+    background-position: -245px -125px;
+}
+
+.sprite-squared-cross {
+    width: 50px;
+    height: 50px;
+    background-position: -230px -185px;
+}
+
+.sprite-triangle-down {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -245px;
+}
+
+.sprite-user {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -245px;
+}

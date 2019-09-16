@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/css/style_login1.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <img src="Assets/Images/Logo_DAHM-1.gif" class="logo">
+    <div class="box-login">
+      <h1>ลงชื่อเข้าใช้งาน</h1>
+      <form>
+        <p>อีเมล หรือชื่อผู้ใช้</p>
+        <input type="text" name="user" class="input shadow">
+        <p>รหัสผ่าน</p>
+        <span id="eye"></span>
+        <input type="password" id="password" class="input shadow showpass">
+        <span class="caps-lock-warning txt_cap">คุณได้กด caps lock ไว้อยู่!!!</span>
+        <!--Warn Caps lock-->
+        <script type="text/javascript">
+        $(function(){
+          //Initialize to hide caps-lock-warning
+          $('.caps-lock-warning').hide();
+
+          //Sniff for Caps-Lock state
+          $("#password").keypress(function(e) {
+            var s = String.fromCharCode( e.which );
+            if((s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey)||
+            (s.toUpperCase() !== s && s.toLowerCase() === s && e.shiftKey)) {
+              this.caps = true; // Enables to do something on Caps-Lock keypress
+              $(this).next('.caps-lock-warning').show();
+            } else if((s.toLowerCase() === s && s.toUpperCase() !== s && !e.shiftKey)||
+                (s.toLowerCase() !== s && s.toUpperCase() === s && e.shiftKey)) {
+                  this.caps = false; // Enables to do something on Caps-Lock keypress
+                  $(this).next('.caps-lock-warning').hide();
+                }//else else do nothing if not a letter we can use to differentiate
+              });
+
+              //Toggle warning message on Caps-Lock toggle (with some limitation)
+              $(document).keydown(function(e){
+                if(e.which==20){ // Caps-Lock keypress
+                  var pass = document.getElementById("password");
+                  if(typeof(pass.caps) === 'boolean'){
+                    //State has been set to a known value by keypress
+                    pass.caps = !pass.caps;
+                    $(pass).next('.caps-lock-warning').toggle(pass.caps);
+                  }
+                }
+              });
+
+              //Disable on window lost focus (because we loose track of state)
+              $(window).blur(function(e){
+                // If window is inactive, we have no control on the caps lock toggling
+                // so better to re-set state
+                var pass = document.getElementById("password");
+                if(typeof(pass.caps) === 'boolean'){
+                  pass.caps = null;
+                  $(pass).next('.caps-lock-warning').hide();
+                }
+              });
+            });
+        </script>
+        <!--Show Password and Hind Password-->
+        <script type="text/javascript">
+        $(document).ready(function() {
+          $("#eye").click(function() {
+            if ($(".showpass").attr("type") == "password") {
+              $(".showpass").attr("type", "text");
+
+            } else {
+              $(".showpass").attr("type", "password");
+            }
+          });
+        });
+        </script>
+      </form>
+      <a href="#" class="notlog-txt">ไม่สามารถเข้าสู่ระบบได้</a>
+      <button type="button" name="login" class="login-btn shadow">เข้าสู่ระบบ</button>
+    </div>
+    <button type="button" name="register" class="register-btn">สมัครสมาชิก</button>
+    <footer>
+      DAHM
+    </footer>
+  </body>
+</html>

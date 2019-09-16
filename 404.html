@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ไม่พบหน้า | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/Icon/icon.css">
+    <link rel="stylesheet" href="Assets/css/style_404.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav tst-outquint">
+      <i class="sprite sprite-cross-black" style="margin-top: 0px;" onclick="closeNav()"></i>
+      <a href="index.html" class="tst-outquint" style="margin-top: 40px;">หมอนัด</a>
+      <a href="medicine.html" class="tst-outquint">ทานยา</a>
+      <a href="aid.html" class="tst-outquint">ปฐมพยาบาล</a>
+      <a href="map.html" class="tst-outquint">แผนที่</a>
+      <a href="patient.html" class="tst-outquint">ประวัติการรักษา</a>
+      <a href="about.html" class="tst-outquint">เกี่ยวกับเรา</a>
+
+      <div class="line-nav"></div>
+    </div>
+
+    <div id="main" class="tst-outquint">
+      <nav class="wrap-menu">
+        <nav id="mobile">
+          <i class="sprite sprite-menu-black" onclick="openNav()"></i>
+          <div class="box-search">
+            <form>
+              <input type="text" name="search" placeholder="ค้นหา" class="input-search">
+            </form>
+            <a href="#">
+              <div class="btn-search">
+                <i class="sprite sprite-magnifying-glass-white"></i>
+              </div>
+            </a>
+          </div>
+          <div class="line-nav"></div>
+        </nav>
+        <nav id="tablet">
+          <div class="wrap-link">
+            <a href="index.html" class="tst-outquint">หมอนัด</a>
+            <a href="medicine.html" class="tst-outquint">ทานยา</a>
+            <a href="aid.html" class="tst-outquint">ปฐมพยาบาล</a>
+            <a href="map.html" class="tst-outquint">แผนที่</a>
+            <a href="patient.html" class="tst-outquint">ประวัติการรักษา</a>
+            <a href="about.html" class="tst-outquint">เกี่ยวกับเรา</a>
+          </div>
+          <div class="box-search">
+            <form>
+              <input type="text" name="search" placeholder="ค้นหา" class="input-search">
+            </form>
+            <a href="#">
+              <div class="btn-search">
+                <i class="sprite sprite-magnifying-glass-white"></i>
+              </div>
+            </a>
+          </div>
+          <div class="line-nav"></div>
+        </nav>
+      </nav>
+
+      <section class="wrap-content">
+        <article class="wrap-txt-content">
+          <h4>404</h4>
+          <h1 style="margin-top: -170px;">ไม่พบหน้านั้น</h1>
+          <h1 style="margin-top: 50px;">ไม่พบสิ่งใดบนที่นั้น <br>บางทีลองใช้การค้นหา</h1>
+        </article>
+        <button onclick="goBack()" class="btn-back tst-outquint">กลับไปก่อนหน้านี้</button>
+        <script>
+        function goBack() {
+          window.history.back();
+        }
+        </script>
+      </section>
+    </div>
+
+    <script>
+      function openNav() {
+      document.getElementById("mySidenav").style.height = "380px";
+      document.getElementById("main").style.marginTop = "380px";
+    }
+      function closeNav() {
+      document.getElementById("mySidenav").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+    }
+    </script>
+
+    <footer><p>Copyright © 2017. DAHM.</p></footer>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+.sprite {
+    background-image: url(dashboard.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bookmark {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -5px;
+}
+
+.sprite-chat {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -5px;
+}
+
+.sprite-cross {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -5px;
+}
+
+.sprite-database {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -65px;
+}
+
+.sprite-drive {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -65px;
+}
+
+.sprite-magnifying-glass {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -65px;
+}
+
+.sprite-mail {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -125px;
+}
+
+.sprite-menu {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -125px;
+}
+
+.sprite-notification {
+    width: 50px;
+    height: 50px;
+    background-position: -125px -125px;
+}
+
+.sprite-squared-plus {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -5px;
+}
+
+.sprite-text-document {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -65px;
+}
+
+.sprite-triangle-down {
+    width: 50px;
+    height: 50px;
+    background-position: -185px -125px;
+}
+
+.sprite-typing {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -185px;
+}
+
+.sprite-users {
+    width: 50px;
+    height: 50px;
+    background-position: -65px -185px;
+}

@@ -1,0 +1,346 @@
+/***** Thanapong 13580207 *****/
+
+@import url('../Fonts/CSChatThai.css');
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'cs_chatthairegular';
+ }
+a {
+  text-decoration: none;
+  color: #EDEDED;
+}
+h1 p {
+  font-size: 0;
+}
+select, option, button { outline: none; }
+/*static*/
+.pos-center {
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.shadow-menu {
+ box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+ -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+ -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+ -ms-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+ -o-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.5);
+}
+.shadow-wrap {
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+  -ms-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+  -o-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+}
+.tst-outquint {
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -ms-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.left { float: left; }
+.right { float: right; }
+
+/*style*/
+.sidenav {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background-color: #2477BF;
+  overflow-x: hidden;
+  font-family: 'cs_chatthairegular';
+  font-weight: normal;
+}
+.closebtn {
+  background-color: red;
+}
+.sprite-cross {
+  transform: scale(.4);
+}
+.sidenav-line {
+  width: 346px;
+  height: 1px;
+  background: #EDEDED;
+  margin: auto;
+  margin-top: -15px;
+}
+.sidenav a {
+  color: #EDEDED;
+  font-size: 1.5em;
+  display: block;
+  margin: 10px 10px 10px 12px;
+}
+.sidenav #active-menu { font-weight: bold; }
+.sidenav a:hover, .sidenav a:focus { margin-left: 30px; }
+.wrap-profile {
+  width: 400px;
+  height: 40px;
+}
+.wrap-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  float: left;
+}
+.wrap-profile p {
+  font-size: .8em;
+  padding-top: 6px;
+  padding-left: 50px;
+}
+.sprite-user {
+  transform: scale(.6);
+  background: red;
+}
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.menu-mobile {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #2477BF;
+  position: fixed;
+}
+.menu-main { display: none; }
+.menu-mobile span { cursor: pointer; }
+.menu-mobile .sprite-menu {
+  transform: scale(.6);
+  position: absolute;
+  z-index: 10;
+}
+.menu-mobile-topic {
+  font-family: 'cs_chatthairegular';
+  font-weight: normal;
+  font-size: 1.5em;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+.sprite-magnifying-glass {
+  transform: scale(.5);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.wrap-card-tool {
+  width: auto;
+  height: auto;
+  margin: 70px 0px 50px 3px;
+}
+.wrap-card-tool span {
+  cursor: pointer;
+  float: left;
+}
+.wrap-card-topic {
+  font-size: 1em;
+  font-weight: normal;
+}
+.warp-card-line {
+  width: 370px;
+  height: 1px;
+  background: black;
+  margin-top: -12px;
+  opacity: .3;
+}
+.box-look {
+  width: auto;
+  height: auto;
+}
+.wrap-card-tool .sprite-list, .wrap-card-tool .sprite-calendar {
+  transform: scale(.5);
+  opacity: .3;
+  margin: 0px 5px 0px -10px;
+}
+.wrap-card-tool .sprite-list { opacity: 1; }
+.box-list {
+  width: 210px;
+  height: auto;
+}
+.box-list p { float: left; }
+.list-day {
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: normal;
+  float: left;
+  margin: 12px 0px 0px 10px;
+}
+.list-day:hover , .list-day:focus { border-color: #397373; }
+.wrap-card-list {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+.card-content {
+  width: 370px;
+  height: 145px;
+  background-color: #EDEDED;
+  border-radius: 10px;
+  margin: 10px 10px 0px 3px;
+  float: left;
+}
+.card-content:hover, .card-content:focus {
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -ms-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+  -o-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+}
+.box-day {
+  width: 60px;
+  height: 60px;
+  color: #2477BF;
+  margin: 7px 0px 0px 7px;
+  float: left;
+}
+.box-day p {
+  font-size: 1em;
+  margin-top: 0;
+  opacity: .5;
+}
+.box-day h1 {
+  font-size: 1.8em;
+  margin-top: -20px;
+}
+.card-line {
+  width: 1px;
+  height: 60px;
+  background-color: #1B1B1B;
+  float: left;
+  margin-top: 10px;
+  opacity: .5;
+}
+.box-detail {
+  width: 290px;
+  height: 70px;
+  margin: 10px 0px 0px 5px;
+  float: left;
+}
+.box-detail h1 {
+  font-size: 1.2em;
+  margin: -5px 0px 0px 0px;
+}
+.box-detail p {
+  font-size: 1em;
+  opacity: .5;
+  margin: -3px 0px 0px 0px;
+}
+.btn-detail {
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #b7c8c8;
+  border: 0px;
+  margin: 5px 0px 0px 95px;
+  cursor: pointer;
+}
+.btn-box-detail {
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #397373;
+  margin-top: -20px;
+}
+.btn-txt-detail {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #EDEDED;
+  padding-top: 7px;
+}
+.wrap-card-calendar {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+/* iPhone 6 plus */
+@media only screen and (min-width: 414px) {
+  .warp-card-line { width: 408px; }
+  .card-content { margin-left: 24px; }
+}
+
+/* iPad */
+@media only screen and (min-width: 426px) {
+  .menu-mobile { display: none; }
+  .menu-main {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #2477BF;
+  }
+  .menu-logo {
+    width: auto;
+    height: 30px;
+    padding: 10px 5px 10px 10px;
+    float: left;
+  }
+  .menu-profile {
+    width: 160px;
+    height: 50px;
+    float: right;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  .menu-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    float: left;
+    margin: 10px 10px 0px 10px;
+  }
+  .menu-profile p { margin: 12px 0px 0px 0px; }
+  .menu-logo:hover, .menu-logo:focus, .menu-profile:hover, .menu-profile:focus {
+    background: #6595BF;
+  }
+  .wrap-card-tool { margin: 170px 0px 50px 3px; }
+  .box-menu {
+    width: 100%;
+    height: 30px;
+    background-color: #92bbdf;
+    float: left;
+  }
+  .box-menu a {
+    float: left;
+  }
+  .box-name-menu {
+    height: 30px;
+    margin: -16px -20px 0px 10px;
+    float: left;
+  }
+  .box-name-menu p {
+    font-size: .9em;
+    font-weight: bold;
+    margin-top: 19px;
+    color: #1B1B1B;
+  }
+  .line-menu {
+    display: none;
+    width: 100px;
+    height: 3px;
+    background-color: #2477BF;
+    margin-top: -10px;
+  }
+}
+
+/*2477BF blue h*/
+/*92bbdf blue l*/
+/*397373 green*/
+/*EDEDED white*/
+/*1B1B1B Black*/
+/*Tablet*/

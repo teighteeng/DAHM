@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/Icon/icon.css">
+    <link rel="stylesheet" href="Assets/css/style_login.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap-login">
+      <a href="index.html">
+        <div class="btn-back-page tst-outquint">
+          <i class="sprite sprite-chevron-left-green"></i>
+          <p class="txt-back-page">กลับไปหน้าแรก</p>
+        </div>
+      </a>
+      <div class="line-back-page"></div>
+      <div class="box-login">
+        <img src="Assets/Images/logo_text.png">
+        <h1>เข้าสู่ระบบ</h1>
+        <form class="wrap-input" action="index.html" method="post">
+          <input type="text" name="username" placeholder="ชื่อผู้ใช้" class="input-txt tst-outquint"><br>
+          <input type="password" name="passwod" placeholder="รหัสผ่าน" class="input-txt tst-outquint showpass">
+          <div id="eye" class="icon-eye tst-outquint"><i class="sprite sprite-eye"></i></div>
+          <script type="text/javascript">
+          $(document).ready(function() {
+            $("#eye").click(function() {
+              if ($(".showpass").attr("type") == "password") {
+                $(".showpass").attr("type", "text");
+                $('.icon-eye').css('opacity', '1');
+              } else {
+                $(".showpass").attr("type", "password");
+                $('.icon-eye').css('opacity', '.3');
+              }
+            });
+          });
+          </script>
+
+        </form>
+        <a href="#">
+          <div class="input-btn tst-outquint">
+            <p>เข้าสู่ระบบ</p>
+          </div>
+        </a>
+        <div class="wrap-help_ref">
+          <a href="#">
+            <div class="btn-help">
+              <p>ลืมรหัสผ่าน</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="btn-reg tst-outquint">
+              <p>สมัครสมาชิก</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="line-footer"></div>
+      <div class="wrap-footer">
+        <select class="list-language">
+          <option value="volvo">ไทย</option>
+          <option value="saab">Eng</option>
+        </select>
+        <a href="#">
+          <div class="btn-footer tst-outquint">
+            <p>ความช่วยเหลือ</p>
+          </div>
+        </a>
+        <a href="about.html">
+          <div class="btn-footer tst-outquint">
+            <p>เกี่ยวกับเรา</p>
+          </div>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

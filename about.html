@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>เกี่ยวกับ | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/Icon/icon.css">
+    <link rel="stylesheet" href="Assets/css/style_about.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="mySidenav" class="sidenav tst-outquint">
+      <form>
+        <input type="text" name="search" placeholder="ค้นหา" class="input-search tst-outquint">
+      </form>
+      <div class="btn-search">
+        <i class="sprite sprite-magnifying-glass"></i>
+      </div>
+      <i class="sprite sprite-cross" onclick="closeNav()"></i>
+      <a href="index.html" class="tst-outquint">หมอนัด</a>
+      <a href="medicine.html" class="tst-outquint">ทานยา</a>
+      <a href="aid.html" class="tst-outquint">ปฐมพยาบาล</a>
+      <a href="map.html" class="tst-outquint">แผนที่</a>
+      <a href="patient.html" class="tst-outquint">ประวัติการรักษา</a>
+      <a href="about.html" class="tst-outquint active-menu-hbg">เกี่ยวกับเรา</a>
+      <div class="line-menu-hbg"></div>
+      <a href="profile.html">
+        <div class="wrap-img-progile">
+          <img src="Assets/Images/profile.jpg">
+          <h1>ธนพงษ์ ยิ่งยง</h1>
+        </div>
+      </a>
+      <a href="#">
+        <div class="logout">
+          <h1>ออกจากระบบ</h1>
+        </div>
+      </a>
+    </nav>
+
+    <div id="main" class="tst-outquint">
+      <header>
+        <nav class="menu-hbg shadow-menu">
+          <i class="sprite sprite-menu" onclick="openNav()"></i>
+          <h1 class="txt-menu-hbg">เกี่ยวกับเรา</h1>
+          <i class="sprite sprite-magnifying-glass" onclick="openNav()"></i>
+        </nav>
+        <nav class="menu-main">
+          <div class="menu-top">
+            <a href="index.html">
+              <img src="Assets/images/logo_white.png" class="img-logo">
+            </a>
+            <a href="profile.html">
+              <div class="link-profile tst-outquint">
+                <img src="Assets/Images/profile.jpg" class="img-profile">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+
+            </a>
+          </div>
+          <nav class="menu-link shadow-menu">
+            <div class="wrap-link" id="link-01">
+              <a href="index.html">หมอนัด</a>
+              <div class="line-link" id="line-01"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-01").hover(function(){
+                  $("#line-01").css("display", "block");
+                }, function(){
+                  $("#line-01").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-02">
+              <a href="medicine.html">ทานยา</a>
+              <div class="line-link" id="line-02"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-02").hover(function(){
+                  $("#line-02").css("display", "block");
+                }, function(){
+                  $("#line-02").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-03">
+              <a href="aid.html">ปฐมพยาบาล</a>
+              <div class="line-link" id="line-03"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-03").hover(function(){
+                  $("#line-03").css("display", "block");
+                }, function(){
+                  $("#line-03").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-04">
+              <a href="map.html">แผนที่</a>
+              <div class="line-link" id="line-04"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-04").hover(function(){
+                  $("#line-04").css("display", "block");
+                }, function(){
+                  $("#line-04").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-05">
+              <a href="patient.html">ประวัติการรักษา</a>
+              <div class="line-link" id="line-05"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-05").hover(function(){
+                  $("#line-05").css("display", "block");
+                }, function(){
+                  $("#line-05").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-06">
+              <a href="about.html" class="active-menu-main">เกี่ยวกับเรา</a>
+              <div class="line-link" id="line-06" style="display: block;"></div>
+            </div>
+          </nav>
+          <div class="box-search">
+            <form>
+              <input type="text" name="search" placeholder="ค้นหา" class="search-menu-main tst-outquint">
+            </form>
+            <div class="btn-search-menu-main">
+              <i class="sprite sprite-magnifying-glass"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="wrap-content">
+        <div class="img-content"></div>
+        <article class="wrap-txt-content">
+          <h2>จัดตารางการนัดหมอได้ง่ายขึ้น</h2>
+          <p>
+            โปรเจคเว็บแอพ DAHM นี้เป็นส่วนหนึ่งของรายวิชา การออกแบบส่วนต่อประสานกับผู้ใช้ (USER INTERFACE DESIGN)ของมหาวิทยาลัยศิลปากร ที่นำองค์ประกอบจากที่ได้เรียนมาประยุกต์ใช้กับการออกแบบ และสามารถนำไปใช้ได้จริง
+            <br><br>
+            เป็นเว็บแอพเกี่ยวกับช่วยจัดเวลาการนัดหมอ จากประสบการณ์การที่ใบนัดหมอหายบ้าง ลืมว่าต้องไปหาหมอบ้าง และยังเก็บประวัติการรักษาไว้ เวลาที่ไปที่โรงพยาบาลอื่น สามารถ ให้ข้อมูลการรักษากับแพท์ผู้รักษา
+          </p>
+        </article>
+        <article class="wrap-form-content">
+          <article class="wrap-form-center">
+            <h1>ติดต่อเรา</h1>
+            <form class="wrap-input-content">
+              <p>ชื่อ*</p>
+              <input type="text" name="name">
+              <p>อีเมล*</p>
+              <input type="text" name="name">
+              <p>ส่งข้อความ*</p>
+              <input type="text" name="name">
+            </form>
+          </article>
+          <div class="btn-eat tst-outquint" id="btn-eat-01">
+            <h1 id="txt-eat-01">ส่ง</h1>
+            <script>
+            $(document).ready(function(){
+              $("#btn-eat-01").click(function(){
+                $("#btn-eat-01").css("border", "1px solid #397373");
+                $("#btn-eat-01").css("background-color", "#397373");
+                $("#txt-eat-01").css("color", "white");
+              }, function(){
+                $("#btn-eat-01").css("border", "1px solid #2477bf");
+                $("#btn-eat-01").css("background-color", "white");
+                $("#txt-eat-01").css("color", "#2477bf");
+              });
+            });
+            </script>
+          </div>
+        </article>
+      </section>
+
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.height = "505px";
+      document.getElementById("main").style.marginTop = "455px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ทานยา | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/Icon/icon.css">
+    <link rel="stylesheet" href="Assets/css/style_mdc.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="mySidenav" class="sidenav tst-outquint">
+      <form>
+        <input type="text" name="search" placeholder="ค้นหา" class="input-search tst-outquint">
+      </form>
+      <div class="btn-search">
+        <i class="sprite sprite-magnifying-glass"></i>
+      </div>
+      <i class="sprite sprite-cross" onclick="closeNav()"></i>
+      <a href="index.html" class="tst-outquint">หมอนัด</a>
+      <a href="medicine.html" class="tst-outquint active-menu-hbg">ทานยา</a>
+      <a href="aid.html" class="tst-outquint">ปฐมพยาบาล</a>
+      <a href="map.html" class="tst-outquint">แผนที่</a>
+      <a href="patient.html" class="tst-outquint">ประวัติการรักษา</a>
+      <a href="about.html" class="tst-outquint">เกี่ยวกับเรา</a>
+      <div class="line-menu-hbg"></div>
+      <a href="profile.html">
+        <div class="wrap-img-progile">
+          <img src="Assets/Images/profile.jpg">
+          <h1>ธนพงษ์ ยิ่งยง</h1>
+        </div>
+      </a>
+      <a href="#">
+        <div class="logout">
+          <h1>ออกจากระบบ</h1>
+        </div>
+      </a>
+    </nav>
+
+    <div id="main" class="tst-outquint">
+      <header>
+        <nav class="menu-hbg shadow-menu">
+          <i class="sprite sprite-menu" onclick="openNav()"></i>
+          <h1 class="txt-menu-hbg">ทานยา</h1>
+          <i class="sprite sprite-magnifying-glass" onclick="openNav()"></i>
+        </nav>
+        <nav class="menu-main">
+          <div class="menu-top">
+            <a href="index.html">
+              <img src="Assets/Images/logo_white.png" class="img-logo">
+            </a>
+            <a href="profile.html">
+              <div class="link-profile tst-outquint">
+                <img src="Assets/Images/profile.jpg" class="img-profile">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+
+            </a>
+          </div>
+          <nav class="menu-link shadow-menu">
+            <div class="wrap-link" id="link-01">
+              <a href="index.html">หมอนัด</a>
+              <div class="line-link" id="line-01"></div>
+
+            </div>
+            <div class="wrap-link" id="link-02">
+              <a href="medicine.html" class="active-menu-main">ทานยา</a>
+              <div class="line-link" id="line-02" style="display: block;"></div>
+            </div>
+            <div class="wrap-link" id="link-03">
+              <a href="aid.html">ปฐมพยาบาล</a>
+              <div class="line-link" id="line-03"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-03").hover(function(){
+                  $("#line-03").css("display", "block");
+                }, function(){
+                  $("#line-03").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-04">
+              <a href="map.html">แผนที่</a>
+              <div class="line-link" id="line-04"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-04").hover(function(){
+                  $("#line-04").css("display", "block");
+                }, function(){
+                  $("#line-04").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-05">
+              <a href="patient.html">ประวัติการรักษา</a>
+              <div class="line-link" id="line-05"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-05").hover(function(){
+                  $("#line-05").css("display", "block");
+                }, function(){
+                  $("#line-05").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-06">
+              <a href="about.html">เกี่ยวกับเรา</a>
+              <div class="line-link" id="line-06"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-06").hover(function(){
+                  $("#line-06").css("display", "block");
+                }, function(){
+                  $("#line-06").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+          </nav>
+          <div class="box-search">
+            <form>
+              <input type="text" name="search" placeholder="ค้นหา" class="search-menu-main tst-outquint">
+            </form>
+            <div class="btn-search-menu-main">
+              <i class="sprite sprite-magnifying-glass"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="wrap-top">
+        <h1 class="txt-top">ยาสำหรับรักษาโรคพิษสุนัขบ้า</h1>
+        <div class="line-nav"></div>
+      </div>
+
+      <section class="card shadow-wrap">
+        <article class="wrap-top-card">
+          <img src="Assets/Images/antibiotics.jpg">
+          <div class="wrap-txt-top-card">
+            <h1 class="txt-topic">ยาปฏิชีวนะ</h1>
+            <h1 class="txt-time">อีก 2.45 ชั่วโมง (เย็น)</h1>
+            <p class="txt-type">(แคปซูล)</p>
+          </div>
+          <div class="line-top-card"></div>
+          <div class="wrap-tag">
+            <div class="box-txt-tag" style="width: 120px;">
+              <h1>ทานให้ตรงเวลา</h1>
+            </div>
+            <div class="box-txt-tag" style="width: 120px;">
+              <h1>ต้องทานให้หมด</h1>
+            </div>
+          </div>
+          <div class="box-sh-detail" id="btn-sh-01">
+            <h1>รายละเอียดของยา</h1>
+            <i class="sprite sprite-chevron-down"></i>
+          </div>
+          <div class="box-detail tst-outquint" id="box-detail-01">
+            <div class="line-detail"></div>
+            <div class="wrap-txt-h1-detail">
+              <h1>ชื่อยา</h1>
+              <h1>สรรพคุณ</h1>
+              <h1>จำนวนยา</h1>
+              <h1>เหลือ</h1>
+              <h1>แพทย์ที่สั่งยา</h1>
+              <h1>โรงพยาบาล</h1>
+              <h1>วันที่ออกยา</h1>
+              <h1>หมดอายุ</h1>
+            </div>
+            <div class="wrap-txt-h2-detail">
+              <h1>Antibiotics</h1>
+              <h1>รักษาโรคติดเชื้อ</h1>
+              <h1>21 เม็ด</h1>
+              <h1>12 เม็ด</h1>
+              <h1>นพ.สัมฤทธฺ์</h1>
+              <h1>โรงพยาบาลหัวหิน</h1>
+              <h1>25 เมษายน 2560</h1>
+              <h1>1 มกราคม 2564</h1>
+            </div>
+          </div>
+          <script>
+          $(document).ready(function(){
+            $("#btn-sh-01").click(function(){
+              $("#btn-sh-01").css("border-radius", "10px");
+              $("#box-detail-01").css("height", "0");
+            }, function(){
+              $("#btn-sh-01").css("border-radius", "10px 10px 0px 0px");
+              $("#box-detail-01").css("height", "354px");
+            });
+          });
+          </script>
+          <div class="btn-eat tst-outquint" id="btn-eat-01">
+            <h1 id="txt-eat-01">ทานแล้ว</h1>
+          </div>
+          <script>
+          $(document).ready(function(){
+            $("#btn-eat-01").click(function(){
+              $("#btn-eat-01").css("border", "1px solid #397373");
+              $("#btn-eat-01").css("background-color", "#397373");
+              $("#txt-eat-01").css("color", "white");
+            }, function(){
+              $("#btn-eat-01").css("border", "1px solid #2477bf");
+              $("#btn-eat-01").css("background-color", "#e6e6e6");
+              $("#txt-eat-01").css("color", "#2477bf");
+            });
+          });
+          </script>
+          <div class="bottom-wrap-card"></div>
+        </article>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-top-card">
+          <img src="Assets/Images/antibiotics.jpg">
+          <div class="wrap-txt-top-card">
+            <h1 class="txt-topic">พาราเซตามอล</h1>
+            <h1 class="txt-time">ทานเมื่อมีอาการปวด</h1>
+            <p class="txt-type">(เม็ด)</p>
+          </div>
+          <div class="line-top-card"></div>
+          <div class="wrap-tag">
+            <div class="box-txt-tag" style="width: 150px;">
+              <h1>ทานเมื่อมีอาการปวด</h1>
+            </div>
+          </div>
+          <div class="box-sh-detail" id="btn-sh-02">
+            <h1>รายละเอียดของยา</h1>
+            <i class="sprite sprite-chevron-down"></i>
+          </div>
+          <div class="box-detail tst-outquint" id="box-detail-02">
+            <div class="line-detail"></div>
+            <div class="wrap-txt-h1-detail">
+              <h1>ชื่อยา</h1>
+              <h1>สรรพคุณ</h1>
+              <h1>จำนวนยา</h1>
+              <h1>เหลือ</h1>
+              <h1>แพทย์ที่สั่งยา</h1>
+              <h1>โรงพยาบาล</h1>
+              <h1>วันที่ออกยา</h1>
+              <h1>หมดอายุ</h1>
+            </div>
+            <div class="wrap-txt-h2-detail">
+              <h1>Paracetamol</h1>
+              <h1>บรรเทาอาการปวด</h1>
+              <h1>24 เม็ด</h1>
+              <h1>20 เม็ด</h1>
+              <h1>นพ.สัมฤทธฺ์</h1>
+              <h1>โรงพยาบาลหัวหิน</h1>
+              <h1>25 เมษายน 2560</h1>
+              <h1>1 มกราคม 2564</h1>
+            </div>
+          </div>
+          <script>
+          $(document).ready(function(){
+            $("#btn-sh-02").click(function(){
+              $("#btn-sh-02").css("border-radius", "10px");
+              $("#box-detail-02").css("height", "0");
+            }, function(){
+              $("#btn-sh-02").css("border-radius", "10px 10px 0px 0px");
+              $("#box-detail-02").css("height", "354px");
+            });
+          });
+          </script>
+          <div class="btn-eat tst-outquint" id="btn-eat-02">
+            <h1 id="txt-eat-02">ทานแล้ว</h1>
+          </div>
+          <script>
+          $(document).ready(function(){
+            $("#btn-eat-02").click(function(){
+              $("#btn-eat-02").css("border", "1px solid #397373");
+              $("#btn-eat-02").css("background-color", "#397373");
+              $("#txt-eat-02").css("color", "white");
+            }, function(){
+              $("#btn-eat-02").css("border", "1px solid #2477bf");
+              $("#btn-eat-02").css("background-color", "#e6e6e6");
+              $("#txt-eat-02").css("color", "#2477bf");
+            });
+          });
+          </script>
+          <div class="bottom-wrap-card"></div>
+        </article>
+      </section>
+
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.height = "505px";
+      document.getElementById("main").style.marginTop = "455px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+    }
+    </script>
+  </body>
+</html>

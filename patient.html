@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ประวัติการรักษา | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/Icon/icon.css">
+    <link rel="stylesheet" href="Assets/css/style_patient.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="mySidenav" class="sidenav tst-outquint">
+      <form>
+        <input type="text" name="search" placeholder="ค้นหา" class="input-search tst-outquint">
+      </form>
+      <div class="btn-search">
+        <i class="sprite sprite-magnifying-glass"></i>
+      </div>
+      <i class="sprite sprite-cross" onclick="closeNav()"></i>
+      <a href="index.html" class="tst-outquint">หมอนัด</a>
+      <a href="medicine.html" class="tst-outquint">ทานยา</a>
+      <a href="aid.html" class="tst-outquint">ปฐมพยาบาล</a>
+      <a href="map.html" class="tst-outquint">แผนที่</a>
+      <a href="patient.html" class="tst-outquint active-menu-hbg">ประวัติการรักษา</a>
+      <a href="about.html" class="tst-outquint">เกี่ยวกับเรา</a>
+      <div class="line-menu-hbg"></div>
+      <a href="profile.html">
+        <div class="wrap-img-progile">
+          <img src="Assets/Images/profile.jpg">
+          <h1>ธนพงษ์ ยิ่งยง</h1>
+        </div>
+      </a>
+      <a href="#">
+        <div class="logout">
+          <h1>ออกจากระบบ</h1>
+        </div>
+      </a>
+    </nav>
+
+    <div id="main" class="tst-outquint">
+      <header>
+        <nav class="menu-hbg shadow-menu">
+          <i class="sprite sprite-menu" onclick="openNav()"></i>
+          <h1 class="txt-menu-hbg">ประวัติการรักษา</h1>
+          <i class="sprite sprite-magnifying-glass" onclick="openNav()"></i>
+        </nav>
+        <nav class="menu-main">
+          <div class="menu-top">
+            <a href="index.html">
+              <img src="Assets/Images/logo_white.png" class="img-logo">
+            </a>
+            <a href="profile.html">
+              <div class="link-profile tst-outquint">
+                <img src="Assets/Images/profile.jpg" class="img-profile">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+
+            </a>
+          </div>
+          <nav class="menu-link shadow-menu">
+            <div class="wrap-link" id="link-01">
+              <a href="index.html">หมอนัด</a>
+              <div class="line-link" id="line-01"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-01").hover(function(){
+                  $("#line-01").css("display", "block");
+                }, function(){
+                  $("#line-01").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-02">
+              <a href="medicine.html">ทานยา</a>
+              <div class="line-link" id="line-02"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-02").hover(function(){
+                  $("#line-02").css("display", "block");
+                }, function(){
+                  $("#line-02").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-03">
+              <a href="aid.html">ปฐมพยาบาล</a>
+              <div class="line-link" id="line-03"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-03").hover(function(){
+                  $("#line-03").css("display", "block");
+                }, function(){
+                  $("#line-03").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-04">
+              <a href="map.html">แผนที่</a>
+              <div class="line-link" id="line-04"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-04").hover(function(){
+                  $("#line-04").css("display", "block");
+                }, function(){
+                  $("#line-04").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-05">
+              <a href="patient.html" class="active-menu-main">ประวัติการรักษา</a>
+              <div class="line-link" id="line-05" style="display: block;"></div>
+            </div>
+            <div class="wrap-link" id="link-06">
+              <a href="about.html">เกี่ยวกับเรา</a>
+              <div class="line-link" id="line-06"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-06").hover(function(){
+                  $("#line-06").css("display", "block");
+                }, function(){
+                  $("#line-06").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+          </nav>
+          <div class="box-search">
+            <form>
+              <input type="text" name="search" placeholder="ค้นหา" class="search-menu-main tst-outquint">
+            </form>
+            <div class="btn-search-menu-main">
+              <i class="sprite sprite-magnifying-glass"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="wrap-card">
+        <article class="wrap-profile">
+          <div class="img-profile-card">
+            <img src="Assets/Images/profile.jpg">
+          </div>
+          <div class="wrap-box-card shadow-wrap">
+            <div class="txt-name">
+              <h1>ธนพงษ์ ยิ่งยง</h1>
+            </div>
+            <div class="txt-detail">
+              <div class="txt-detail-1">
+                <h1>กำลังรักษา</h1>
+                <h1>โรคประจำตัว</h1>
+                <h1>แพ้ยา</h1>
+              </div>
+              <div class="txt-detail-2">
+                <h1>กันพิษสุนัขบ้า</h1>
+                <h1>-</h1>
+                <h1>-</h1>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <section class="wrap-list-pt">
+          <div class="wrap-top">
+            <h1 class="txt-top">รายการหมอนัด</h1>
+            <div class="line-nav"></div>
+          </div>
+          <div class="wrap-order-list">
+            <h1>เรียงลำดับ</h1>
+            <select class="order-list" name="order-list" style="margin-top:12px;">
+              <option value="day_min">วันที่ : เก่า - ใหม่</option>
+              <option value="day_max">วันที่ : ใหม่ - เก่า</option>
+            </select>
+            <script>
+            $(document).ready(function(){
+              $("#icon-2").hover(function(){
+                $("#icon-1").css("opacity", ".3");
+                $("#icon-2").css("opacity", "1");
+              }, function(){
+                $("#icon-1").css("opacity", "1");
+                $("#icon-2").css("opacity", ".3");
+              });
+            });
+            </script>
+          </div>
+
+          <section class="wrap-list-detail-pt shadow-wrap">
+            <a href="#">
+              <article class="box-list">
+                <h1>25 เม.ย. 60</h1>
+                <p>ฉีดยากันพิษสุนัขบ้า #1</p>
+                <i class="sprite sprite-chevron-right" onclick="openNav()"></i>
+              </article>
+              <div class="line-list"></div>
+            </a>
+            <a href="#">
+              <article class="box-list">
+                <h1>01 เม.ย. 60</h1>
+                <p>ไข้หวัด</p>
+                <i class="sprite sprite-chevron-right" onclick="openNav()"></i>
+              </article>
+              <div class="line-list"></div>
+            </a>
+            <a href="#">
+              <article class="box-list">
+                <h1>09 ม.ค. 60</h1>
+                <p>ปวดหัว</p>
+                <i class="sprite sprite-chevron-right" onclick="openNav()"></i>
+              </article>
+            </a>
+          </section>
+        </section>
+
+      </section>
+
+
+
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.height = "505px";
+      document.getElementById("main").style.marginTop = "455px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+    }
+    </script>
+  </body>
+</html>

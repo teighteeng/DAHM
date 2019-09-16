@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ระบบเซิฟเวอร์ | DAHM</title>
+    <link rel="icon" href="Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="Assets/Icon/dashboard.css">
+    <link rel="stylesheet" href="Assets/css/style_dashboard.css">
+
+    <script src="Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav shadow-menu tst-outquint">
+
+      <a href="javascript:void(0)">
+        <div class="box-menu" style="margin-top:0px;">
+          <i class="sprite sprite-menu" onclick="openNav()"></i>
+          <img src="Assets/Images/logo_white.png" class="logo">
+          <i class="sprite sprite-cross" onclick="closeNav()"></i>
+        </div>
+      </a>
+      <a href="uzf.html">
+        <div class="box-menu">
+          <img src="Assets/Images/profile.jpg" class="img-profile">
+          <h1 style="margin-left:10px;">ธนพงษ์ ยิ่งยง</h1>
+        </div>
+      </a>
+      <a href="uzf.html">
+        <div class="box-menu">
+          <i class="sprite sprite-notification"></i>
+          <h1>อัพเดต</h1>
+        </div>
+      </a>
+      <a href="uzf_update.html">
+        <div class="box-menu">
+          <i class="sprite sprite-text-document"></i>
+          <h1>จัดการเนื้อหา</h1>
+        </div>
+      </a>
+      <a href="javascript:void(0)" id="dropdown">
+        <div class="box-menu dropdown">
+          <i class="sprite sprite-bookmark"></i>
+          <h1>หน้า</h1>
+          <i class="sprite sprite-triangle-down"></i>
+          <div class="box-list tst-outquint">
+            <div class="box-menu" style="background-color:#6595bf;">
+              <h1 style="padding-left:10px;">หมอนัด</h1>
+            </div>
+            <div class="box-menu" style="background-color:#6595bf;">
+              <h1 style="padding-left:10px;">กินยา</h1>
+            </div>
+            <div class="box-menu" style="background-color:#6595bf;">
+              <h1 style="padding-left:10px;">ปฐมพยาบาล</h1>
+            </div>
+            <div class="box-menu" style="background-color:#6595bf;">
+              <h1 style="padding-left:10px;">แผนที่</h1>
+            </div>
+            <div class="box-menu" style="background-color:#6595bf;">
+              <h1 style="padding-left:10px;">ประวัติผู้ใช้</h1>
+            </div>
+          </div>
+          <script>
+          $(document).ready(function(){
+            $("#dropdown").click(function(){
+              $(".box-list").css("width", "100px");
+            });
+          });
+          </script>
+        </div>
+      </a>
+      <a href="uzf_remember.html">
+        <div class="box-menu">
+          <i class="sprite sprite-users"></i>
+          <h1>สมาชิก</h1>
+        </div>
+      </a>
+      <a href="uzf_comment.html">
+        <div class="box-menu">
+          <i class="sprite sprite-chat"></i>
+          <h1>ความคิดเห็น</h1>
+        </div>
+      </a>
+      <a href="uzf_db.html">
+        <div class="box-menu">
+          <i class="sprite sprite-database"></i>
+          <h1>ระบบฐานข้อมูล</h1>
+        </div>
+      </a>
+      <a href="uzf_sever.html">
+        <div class="box-menu">
+          <i class="sprite sprite-drive"></i>
+          <h1>ระบบเซิฟเวอร์</h1>
+          <div class="box-this"></div>
+        </div>
+      </a>
+      <a href="uzf_mail.html">
+        <div class="box-menu">
+          <i class="sprite sprite-mail"></i>
+          <h1>ระบบอีเมล</h1>
+        </div>
+      </a>
+      <a href="uzf_mail.html">
+        <div class="box-menu">
+          <i class="sprite sprite-chat"></i>
+          <h1>ระบบตอบกลับอัตโนมัติ</h1>
+        </div>
+      </a>
+
+    </div>
+
+    <div id="main" class="tst-outquint">
+
+      <div class="wrap-search">
+        <form>
+          <input type="text" name="search" placeholder="ค้นหา" class="input-search">
+        </form>
+        <button type="button" name="get_search" class="btn-search">
+          <i class="sprite sprite-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="line-top"></div>
+
+      <div class="wrap-topic">
+        <h1>อัพเดต</h1>
+        <div class="line-topic"></div>
+      </div>
+
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>สถานะ</h1>
+          </article>
+          <article class="wrap-getway-card01">
+            <div class="box-getwat">
+              <div class="box-getwat-name" style="background-color: #ccc;">
+                <h1>GoDaddy</h1>
+              </div>
+              <div class="box-getwat-stact">
+                <h1>ออฟไลน์</h1>
+              </div>
+            </div>
+            <div class="box-getwat">
+              <div class="box-getwat-name online" style="background-color: #2477bf;">
+                <h1 style="color: white;">GoDaddy</h1>
+              </div>
+              <div class="box-getwat-stact online">
+                <h1 style="color: #2477bf;">ออฟไลน์</h1>
+              </div>
+            </div>
+          </article>
+          <article class="wrap-card01-02">
+            <article class="box-card01-02">
+              <h2>1025</h2>
+              <h1>กำลังใช้งาน</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>910</h2>
+              <h1>สมาชิก</h1>
+            </article>
+          </article>
+          <article class="wrap-card01-load">
+            <h1>โหลดเซิฟเวอร์</h1>
+            <div class="load-per"></div>
+            <div class="load-main"><p>22%</p></div>
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>สถานะ</h1>
+          </article>
+          <article class="wrap-card01-02" style="margin-top: -70px;">
+            <article class="box-card01-02">
+              <h2>52</h2>
+              <h1>สมาชิกใหม่</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>910</h2>
+              <h1>สมาชิกทั้งหมด</h1>
+            </article>
+          </article>
+          <article class="wrap-remember">
+            <p style="margin-top:0px;">สมาชิกล่าสุด</p>
+            <div class="box-remember" style="margin-top:-10px;">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>บุญชี ไตรรัตน์</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>สวากา ดีรัตนะ</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>Jame Turner</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>สถานะ</h1>
+          </article>
+          <article class="wrap-card01-02" style="margin-top: -70px;">
+            <article class="box-card01-02">
+              <h2>52</h2>
+              <h1>สมาชิกใหม่</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>910</h2>
+              <h1>สมาชิกทั้งหมด</h1>
+            </article>
+          </article>
+          <article class="wrap-remember">
+            <p style="margin-top:0px;">สมาชิกล่าสุด</p>
+            <div class="box-remember" style="margin-top:-10px;">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>บุญชี ไตรรัตน์</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>สวากา ดีรัตนะ</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>Jame Turner</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>เนื้อหา</h1>
+          </article>
+
+          <div class="btn-page tst-outquint">
+            <h1>หมอนัด</h1>
+          </div>
+          <div class="btn-page tst-outquint">
+            <h1>กินยา</h1>
+          </div>
+          <div class="btn-page tst-outquint">
+            <h1>ปฐมพยาบาล</h1>
+          </div>
+          <div class="btn-page tst-outquint">
+            <h1>แผนที่</h1>
+          </div>
+          <div class="btn-page tst-outquint">
+            <h1>ประวัติผู้ใช้</h1>
+          </div>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>ระบบฐานข้อมูล </h1>
+          </article>
+
+          <div class="box-txt-card">
+            <h1>Server: Localhost via UNIX socket</h1>
+            <h1>Server type: MySQL</h1>
+            <h1>Server version: 5.7.18-0ubuntu</h1>
+            <h1>Protocol version: 10</h1>
+            <h1>User: u13580207@localhost</h1>
+            <h1>Server charset: UTF-8 Unicode (utf8)</h1>
+          </div>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>หน้าหมอนัด</h1>
+          </article>
+
+          <article class="wrap-card01-02" style="margin-top:-60px;">
+            <article class="box-card01-02">
+              <h2>2</h2>
+              <h1>ฟังก์ชั่น</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>578</h2>
+              <h1>กำลังใช้</h1>
+            </article>
+          </article>
+
+          <article class="wrap-remember">
+            <p style="margin-top:0px;">บันทึกล่าสุด</p>
+            <div class="box-remember" style="margin-top:-10px;">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>บุญชี ไตรรัตน์</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>สวากา ดีรัตนะ</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>Jame Turner</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+
+          </article>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>หน้ากินยา</h1>
+          </article>
+
+          <article class="wrap-card01-02" style="margin-top:-60px;">
+            <article class="box-card01-02">
+              <h2>5</h2>
+              <h1>ฟังก์ชั่น</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>489</h2>
+              <h1>กำลังใช้</h1>
+            </article>
+          </article>
+
+          <article class="wrap-remember">
+            <p style="margin-top:0px;">บันทึกล่าสุด</p>
+            <div class="box-remember" style="margin-top:-10px;">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>บุญชี ไตรรัตน์</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>สวากา ดีรัตนะ</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>Jame Turner</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+
+          </article>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>หน้าปฐมพยาบาล</h1>
+          </article>
+
+          <article class="wrap-card01-02" style="margin-top:-60px;">
+            <article class="box-card01-02">
+              <h2>2</h2>
+              <h1>ฟังก์ชั่น</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>309</h2>
+              <h1>กำลังใช้</h1>
+            </article>
+          </article>
+
+          <article class="wrap-remember">
+            <p style="margin-top:0px;">บันทึกล่าสุด</p>
+            <div class="box-remember" style="margin-top:-10px;">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>บุญชี ไตรรัตน์</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>สวากา ดีรัตนะ</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>Jame Turner</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+
+          </article>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+      <section class="card shadow-wrap">
+        <article class="wrap-card">
+          <article class="txt-card01-01">
+            <h1>หน้าประวัติผู้ใช้</h1>
+          </article>
+
+          <article class="wrap-card01-02" style="margin-top:-60px;">
+            <article class="box-card01-02">
+              <h2>3</h2>
+              <h1>ฟังก์ชั่น</h1>
+            </article>
+            <article class="box-card01-02">
+              <h2>330</h2>
+              <h1>กำลังใช้</h1>
+            </article>
+          </article>
+
+          <article class="wrap-remember">
+            <p style="margin-top:0px;">บันทึกล่าสุด</p>
+            <div class="box-remember" style="margin-top:-10px;">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>บุญชี ไตรรัตน์</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>สวากา ดีรัตนะ</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+            <div class="box-remember">
+              <div class="line-remember"></div>
+              <div class="box-rember-name">
+                <h1>Jame Turner</h1>
+              </div>
+              <div class="box-rember-date">
+                <h1>25/04/60</h1>
+              </div>
+              <div class="line-remember"></div>
+            </div>
+
+          </article>
+
+          </article>
+        </article>
+        <div class="card-bottom"></div>
+      </section>
+
+    </div>
+
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "228px";
+      document.getElementById("main").style.marginLeft = "228px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "60px";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>เป็นไข้ | DAHM</title>
+    <link rel="icon" href="../Assets/Images/Icon.gif">
+    <link rel="stylesheet" href="../Assets/Icon/icon.css">
+    <link rel="stylesheet" href="../Assets/css/style_fever.css">
+
+    <script src="../Assets/JS/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <nav id="mySidenav" class="sidenav tst-outquint">
+      <form>
+        <input type="text" name="search" placeholder="ค้นหา" class="input-search tst-outquint">
+      </form>
+      <div class="btn-search">
+        <i class="sprite sprite-magnifying-glass"></i>
+      </div>
+      <i class="sprite sprite-cross" onclick="closeNav()"></i>
+      <a href="../index.html" class="tst-outquint">หมอนัด</a>
+      <a href="../medicine.html" class="tst-outquint">ทานยา</a>
+      <a href="../aid.html" class="tst-outquint active-menu-hbg">ปฐมพยาบาล</a>
+      <a href="../map.html" class="tst-outquint">แผนที่</a>
+      <a href="../patient.html" class="tst-outquint">ประวัติการรักษา</a>
+      <a href="../about.html" class="tst-outquint">เกี่ยวกับเรา</a>
+      <div class="line-menu-hbg"></div>
+      <a href="../profile.html">
+        <div class="wrap-img-progile">
+          <img src="../Assets/Images/profile.jpg">
+          <h1>ธนพงษ์ ยิ่งยง</h1>
+        </div>
+      </a>
+      <a href="#">
+        <div class="logout">
+          <h1>ออกจากระบบ</h1>
+        </div>
+      </a>
+    </nav>
+
+    <div id="main" class="tst-outquint">
+      <header>
+        <nav class="menu-hbg shadow-menu">
+          <i class="sprite sprite-menu" onclick="openNav()"></i>
+          <h1 class="txt-menu-hbg">ปฐมพยาบาล</h1>
+          <i class="sprite sprite-magnifying-glass" onclick="openNav()"></i>
+        </nav>
+        <nav class="menu-main">
+          <div class="menu-top">
+            <a href="../index.html">
+              <img src="../Assets/images/logo_white.png" class="img-logo">
+            </a>
+            <a href="../profile.html">
+              <div class="link-profile tst-outquint">
+                <img src="../Assets/Images/profile.jpg" class="img-profile">
+                <h1>ธนพงษ์ ยิ่งยง</h1>
+              </div>
+
+            </a>
+          </div>
+          <nav class="menu-link shadow-menu">
+            <div class="wrap-link" id="link-01">
+              <a href="../index.html">หมอนัด</a>
+              <div class="line-link" id="line-01" style="display: block;"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-01").hover(function(){
+                  $("#line-01").css("display", "block");
+                }, function(){
+                  $("#line-01").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-02">
+              <a href="../medicine.html">ทานยา</a>
+              <div class="line-link" id="line-02"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-02").hover(function(){
+                  $("#line-02").css("display", "block");
+                }, function(){
+                  $("#line-02").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-03">
+              <a href="../aid.html" class="active-menu-main">ปฐมพยาบาล</a>
+              <div class="line-link" id="line-03"></div>
+            </div>
+            <div class="wrap-link" id="link-04">
+              <a href="../map.html">แผนที่</a>
+              <div class="line-link" id="line-04"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-04").hover(function(){
+                  $("#line-04").css("display", "block");
+                }, function(){
+                  $("#line-04").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-05">
+              <a href="../patient.html">ประวัติการรักษา</a>
+              <div class="line-link" id="line-05"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-05").hover(function(){
+                  $("#line-05").css("display", "block");
+                }, function(){
+                  $("#line-05").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+            <div class="wrap-link" id="link-06">
+              <a href="../about.html">เกี่ยวกับเรา</a>
+              <div class="line-link" id="line-06"></div>
+              <script>
+              $(document).ready(function(){
+                $("#link-06").hover(function(){
+                  $("#line-06").css("display", "block");
+                }, function(){
+                  $("#line-06").css("display", "none");
+                });
+              });
+              </script>
+            </div>
+          </nav>
+          <div class="box-search">
+            <form>
+              <input type="text" name="search" placeholder="ค้นหา" class="search-menu-main tst-outquint">
+            </form>
+            <div class="btn-search-menu-main">
+              <i class="sprite sprite-magnifying-glass"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="wrap-top">
+        <h1 class="txt-top">อาการที่เป็น > มีไข้</h1>
+        <div class="line-nav"></div>
+      </div>
+      <section class="wrap-text">
+        <article class="txt-head">
+          <h2>ควรปฏิบัติดังนี้</h2>
+        </article>
+        <article class="txt-detail">
+          <h1>1. เช็ดตัวลดไข้<br>
+            2. ให้ยาพาราเซตามอลลด<br>
+            3. ให้ดื่มน้ำประมาณ 2,500-3,000 มิลลิลิตรต่อวัน<br>
+            (ยกเว้นในรายที่เป็นโรคไต โรคหัวใจ)<br>
+            4. ให้นอนพักมากๆ<br>
+            5. ให้อาหารที่มีประโยชน์ย่อยง่าย เช่น ข้าวต้ม โจ๊ก เป็นต้น
+          </h1>
+        </article>
+      </section>
+
+      <section class="wrap-btn-change">
+        <article class="box-btn-center">
+          <article class="wrap-btn-detail" id="btn-01">
+            <a href="../patient.html">
+              <div class="btn-detail" id="btn-detail-01">
+                <h1 id="btn-txt-01">เพิ่มในประวัติ</h1>
+              </div>
+            </a>
+            <div class="bg-btn-detail" id="bg-detail-01"></div>
+            <script>
+            $(document).ready(function(){
+              $("#btn-01").hover(function(){
+                $("#btn-detail-01").css("width", "180px");
+                $("#btn-detail-01").css("height", "50px");
+                $("#btn-detail-01").css("margin-left", "0px");
+                $("#btn-detail-01").css("margin-top", "0px");
+                $("#bg-detail-01").css("margin-top", "-50px");
+                $("#btn-txt-01").css("margin-top", "11px");
+              }, function(){
+                $("#btn-detail-01").css("width", "170px");
+                $("#btn-detail-01").css("height", "40px");
+                $("#btn-detail-01").css("margin-left", "5px");
+                $("#btn-detail-01").css("margin-top", "5px")
+                $("#bg-detail-01").css("margin-top", "-45px");
+                $("#btn-txt-01").css("margin-top", "6px");
+              });
+            });
+            </script>
+          </article>
+          <article class="wrap-btn-detail" id="btn-01">
+            <a href="../map.html">
+              <div class="btn-detail" id="btn-detail-01">
+                <h1 id="btn-txt-01">หาโรงพยาบาล</h1>
+              </div>
+            </a>
+            <div class="bg-btn-detail" id="bg-detail-01"></div>
+            <script>
+            $(document).ready(function(){
+              $("#btn-01").hover(function(){
+                $("#btn-detail-01").css("width", "180px");
+                $("#btn-detail-01").css("height", "50px");
+                $("#btn-detail-01").css("margin-left", "0px");
+                $("#btn-detail-01").css("margin-top", "0px");
+                $("#bg-detail-01").css("margin-top", "-50px");
+                $("#btn-txt-01").css("margin-top", "11px");
+              }, function(){
+                $("#btn-detail-01").css("width", "170px");
+                $("#btn-detail-01").css("height", "40px");
+                $("#btn-detail-01").css("margin-left", "5px");
+                $("#btn-detail-01").css("margin-top", "5px")
+                $("#bg-detail-01").css("margin-top", "-45px");
+                $("#btn-txt-01").css("margin-top", "6px");
+              });
+            });
+            </script>
+          </article>
+
+
+        </article>
+      </section>
+
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.height = "505px";
+      document.getElementById("main").style.marginTop = "455px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.height = "0";
+      document.getElementById("main").style.marginTop= "0";
+    }
+    </script>
+  </body>
+</html>
